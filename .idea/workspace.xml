@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20b222dc-1965-4bcb-b2b7-6de2af88f7f0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.rspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Rakefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/address-io.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/address/io/addresses.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/address/io/api_resource.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/address/io/city.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/console" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/address/io.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/address/io_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/address/io/api_operations/list.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/address/io/api_operations/retrieve.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/setup" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/address/io/state.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/address/io/version.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/address-io.gemspec" afterPath="$PROJECT_DIR$/address-io.gemspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/address/io/version.rb" afterPath="$PROJECT_DIR$/lib/address/io/version.rb" />
     </list>
     <ignored path="address-io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,16 +31,26 @@
         <entry file="file://$PROJECT_DIR$/address-io.gemspec">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
-              <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+              <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="io_spec.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="version.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/address/io/version.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.04405286" vertical-offset="0" max-vertical-offset="681">
+              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="io_spec.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/address/io_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.2334802" vertical-offset="0" max-vertical-offset="1185">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1185">
               <caret line="56" column="65" selection-start-line="56" selection-start-column="65" selection-end-line="56" selection-end-column="65" />
               <folding />
             </state>
@@ -143,7 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/address-io.gemspec" />
         <option value="$PROJECT_DIR$/lib/address/io/api_operations/list.rb" />
         <option value="$PROJECT_DIR$/lib/address/io/state.rb" />
         <option value="$PROJECT_DIR$/lib/address/io/city.rb" />
@@ -153,6 +144,8 @@
         <option value="$PROJECT_DIR$/lib/address/io/api_resource.rb" />
         <option value="$PROJECT_DIR$/lib/address/io.rb" />
         <option value="$PROJECT_DIR$/spec/address/io_spec.rb" />
+        <option value="$PROJECT_DIR$/address-io.gemspec" />
+        <option value="$PROJECT_DIR$/lib/address/io/version.rb" />
       </list>
     </option>
   </component>
@@ -493,14 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/address-io.gemspec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
-          <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/address/io/state.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
@@ -559,8 +544,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/address/io_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2334802" vertical-offset="0" max-vertical-offset="1185">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1185">
           <caret line="56" column="65" selection-start-line="56" selection-start-column="65" selection-end-line="56" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/address-io.gemspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/address/io/version.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04405286" vertical-offset="0" max-vertical-offset="681">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
           <folding />
         </state>
       </provider>
