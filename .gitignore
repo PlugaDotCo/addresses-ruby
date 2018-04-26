@@ -9,3 +9,5 @@
 /spec/reports/
 /tmp/
 /address-io-*.gem
+.ruby-version
+.ruby-gemset
