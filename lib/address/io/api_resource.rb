@@ -12,7 +12,7 @@ module Address
       end
 
       def api_request(url, method, params=nil)
-        url = "#{BASE_URL}#{url}"
+        url = "#{self::BASE_URL}#{url}"
         api_key = Address::Io.access_keys
 
         if method == :get && params
