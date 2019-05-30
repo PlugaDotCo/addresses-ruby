@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Address::Io do
   before(:each) do
-    Address::Io.api_key('API_KEY')
+    Address::Io.api_key(ENV['API_KEY'])
   end
 
   it 'has a version number' do
@@ -10,8 +10,8 @@ describe Address::Io do
   end
 
   it 'should set api_key' do
-    Address::Io.api_key('API_KEY')
-    expect(Address::Io.access_keys).to eq('API_KEY')
+    Address::Io.api_key(ENV['API_KEY'])
+    expect(Address::Io.access_keys).to eq(ENV['API_KEY'])
   end
 
   it 'should call Adressio Api' do
