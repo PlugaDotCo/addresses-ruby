@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Address::Io do
   before(:each) do
-    Address::Io.api_key('e12cmDevG5iLhSd9Y7BOpxynL86Detjd2R1D5jsP5UGXA8gwxug0Vojl3H9TIzBpbhI')
+    Address::Io.api_key(ENV['API_KEY'])
   end
 
   it 'has a version number' do
@@ -10,8 +10,8 @@ describe Address::Io do
   end
 
   it 'should set api_key' do
-    Address::Io.api_key('e12cmDevG5iLhSd9Y7BOpxynL86Detjd2R1D5jsP5UGXA8gwxug0Vojl3H9TIzBpbhI')
-    expect(Address::Io.access_keys).to eq('e12cmDevG5iLhSd9Y7BOpxynL86Detjd2R1D5jsP5UGXA8gwxug0Vojl3H9TIzBpbhI')
+    Address::Io.api_key(ENV['API_KEY'])
+    expect(Address::Io.access_keys).to eq(ENV['API_KEY'])
   end
 
   it 'should call Adressio Api' do
@@ -61,13 +61,36 @@ describe Address::Io do
 
     it 'should return correct address when postalCode is 01311-300' do
       address = Address::Io::Addresses.retrieve "01311-300"
-      expect(address[:city][:name]).to eq("São Paulo")
+      expect(address).to include(
+        postalCode: '01311-300',
+        streetSuffix: 'Avenida',
+        street: 'Paulista',
+        district: 'Bela Vista',
+        city: {
+          code: '3550308',
+          name: 'São Paulo'
+        },
+        state: {
+          abbreviation: 'SP'
+        }
+      )
     end
 
     it 'should return correct address when postalCode is 01311300' do
       address = Address::Io::Addresses.retrieve "01311300"
-      expect(address[:city][:name]).to eq("São Paulo")
+      expect(address).to include(
+        postalCode: '01311-300',
+        streetSuffix: 'Avenida',
+        street: 'Paulista',
+        district: 'Bela Vista',
+        city: {
+          code: '3550308',
+          name: 'São Paulo'
+        },
+        state: {
+          abbreviation: 'SP'
+        }
+      )
     end
   end
-
 end
