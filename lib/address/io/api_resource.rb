@@ -11,8 +11,8 @@ module Address
         params.map { |k,v| "#{k}=#{url_encode(v)}" }.join('&')
       end
 
-      def api_request(url, method, params=nil)
-        url = "#{self::BASE_URL}#{url}"
+      def api_request(url, method, params = nil)
+        url = URI.parse(self::BASE_URL).merge(url).to_s
         api_key = Address::Io.access_keys
 
         if method == :get && params
